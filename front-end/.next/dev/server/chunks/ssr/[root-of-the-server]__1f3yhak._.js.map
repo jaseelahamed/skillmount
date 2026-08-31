@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jasee/Desktop/skillMount-emp-managment/front-end2/src/app/providers.jsx"],"sourcesContent":["\"use client\";\n\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\nimport React from \"react\";\n\nconst queryClient = new QueryClient({\n  defaultOptions: {\n    queries: {\n      retry: 1,\n      refetchOnWindowFocus: false,\n    },\n  },\n});\n\nexport default function Providers({ children }) {\n  return (\n    <QueryClientProvider client={queryClient}>\n      {children}\n    </QueryClientProvider>\n  );\n}\n"],"names":["queryClient","defaultOptions","queries","retry","refetchOnWindowFocus","Providers","children","client"],"mappings":";;;;;AAEA;AAAA;AACA;AAHA;;;;AAKA,MAAMA,cAAc,IAAI,4LAAW,CAAC;IAClCC,gBAAgB;QACdC,SAAS;YACPC,OAAO;YACPC,sBAAsB;QACxB;IACF;AACF;AAEe,SAASC,UAAU,EAAEC,QAAQ,EAAE;IAC5C,qBACE,8OAAC,6MAAmB;QAACC,QAAQP;kBAC1BM;;;;;;AAGP"}}]
+}
