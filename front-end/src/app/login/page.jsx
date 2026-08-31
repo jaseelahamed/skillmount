@@ -34,7 +34,7 @@ export default function LoginPage() {
     onSubmit: async (values) => {
       setLoading(true);
       try {
-        const response = await axios.post("http://localhost:3000/api/auth/login", values);
+        const response = await axios.post("https://skillmount.onrender.com/api/auth/login", values);
         if (response.data?.success) {
           const { accessToken, refreshToken, role, user } = response.data;
           
